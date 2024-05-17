@@ -1,16 +1,24 @@
 
 import './App.css'
+import logo from './assets/logo.png'
+import { useNavigate } from 'react-router-dom'
 
 function App() {
+  let navigate = useNavigate();
   
   
 
   return (
     <>
-     <h1>welcome to meprofile🤖</h1>
-     <button>click</button>
-   
+    <div>
+     <img src={logo}
+      alt="greenlogo"
+      style={{ width: "500px", height: "400px", margin: "0" }}
+     />
+   <button onClick={() => navigate("/about")}>click</button>
+     </div>
     </>
+    
   )
 }
 
